@@ -1,0 +1,155 @@
+
+.i{
+    display: flex;
+    height: 100vh;
+    margin-top: 40px;
+}
+.left{
+    flex: 1;
+    
+}
+.intro{
+    font-size: 50px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.name{
+    font-size: 90px;
+    margin: 20px 0 ;
+    font-weight: 500 ;
+}
+.left-wrapper{
+    padding-left: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+.download{
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border: 1px solid  #7ed1cf;
+    background-color: white;
+}
+.download:hover{
+    box-shadow: 1px 1px 1px #7ED1CF;
+    color: #28BCC0;
+}
+.fab{
+    position: fixed;
+    z-index: 99;
+    bottom: 30%;
+    right: 0;
+}
+
+.right{
+    flex: 1
+}
+.i-am{
+    font-size: 30px;
+    font-weight: 300;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+.i-title{
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+
+}
+@keyframes move{
+    50%{
+        transform :translateY(-50px)
+    }
+    100%{
+        transform :translateY(-100px)
+    }
+    
+}
+.i-title-wrapper{
+ height: 100%;
+ animation: move 5s ease-in-out infinite alternate;
+}
+.i-title-item{
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: #7ed1cf;
+}
+.i-bg{
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: #7ED1CF;
+    margin-top: 10px;
+}
+.resume a{
+    text-decoration: none;
+}
+@media screen and (max-width:720px){
+  .i{
+      flex-direction: column;
+      margin-top: 0px;
+      height: 90vh;
+  }
+  .i-bg{
+      margin-top: 40px;
+  }
+  .left-wrapper{
+      padding-left: 20px;
+  }
+  .intro{
+      font-size: 20px;
+  }
+  .name{
+      font-size: 30px;
+  }
+ .left{
+     flex: 0;
+ }
+ .css-176a1b4>:not(style){
+     margin: 6px !important;
+ }
+ .css-1nacmhh-MuiButtonBase-root-MuiFab-root{
+     height: 48px !important;
+     width: 48px !important;
+ }
+ .css-a8igs1-MuiButtonBase-root-MuiFab-root{
+    height: 48px !important;
+    width: 48px !important;
+ }
+.css-1ed0mkw-MuiButtonBase-root-MuiFab-root{
+    height: 48px !important;
+    width: 48px !important;
+}
+  .me{
+      width: 100%;
+
+  }
+}
+@media screen and (max-width:1024px) {
+    .i-title{
+        height: 80px;
+     
+        
+    }
+    .i-title-item{
+        height: 70px;
+        width: 100%;
+        margin: 5px 0;
+        justify-content: center;
+    }
+    @keyframes move{
+        50%{
+            transform :translateY(-80px)
+        }
+        100%{
+            transform :translateY(-170px)
+        }
+        
+    }
+    
+}
