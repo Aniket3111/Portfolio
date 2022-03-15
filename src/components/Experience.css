@@ -2,7 +2,7 @@
     box-shadow: 1px 1px 1px #7ed1cf;
     border-radius: 12px;
     width: 30%;
-    height: 40%;
+    height: 35%;
     margin: 20px;
     padding: 10px;
     border: 1px solid #7ed1cf;
@@ -14,17 +14,17 @@
   }
   .ehead{
       text-align: center;
-      font-size: 50px;
+      font-size: 37px;
   }
   .exp{
       margin-top: 30px;
     
   }
   .ch{
-      font-size: 25px;
+      font-size: 20px;
   }
   .chd{
-      font-size: 20px;
+      font-size: 15px;
   }
   .cardc{
       display: flex;
@@ -36,6 +36,7 @@
   }
   .desci{
       flex: 2;
+      font-size: 14px;
   }
   .cr{
       display: flex;
@@ -49,7 +50,7 @@
     width: 80%;
 }
 .ehead{
-    font-size: 40px;
+    font-size: 30px;
 }
   }
   @media screen and (max-width:380px) {
