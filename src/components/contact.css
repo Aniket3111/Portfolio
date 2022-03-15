@@ -1,0 +1,69 @@
+.c{
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+}
+.back {
+    
+  }
+  .contacthead{
+      text-align: center;
+      font-size: 50px;
+  }
+  .leftt{
+      width: 50%;
+  }
+  .leftt img{
+      width: 100%;
+  }
+  .lr{
+      display: flex;
+  }
+  .righthead{
+      font-size: 40px;
+      text-align: center;
+      padding-top: 100px;
+  }
+  .rhb{
+      color: #28BCC0;
+  }
+  form{
+      margin-top: 20px;
+  }
+  input{
+      width: 50%;
+      height: 50px;
+      border: none;
+      border-bottom: 1px solid black;
+      margin: 10px 0;
+      font-size: 14px;
+      padding-left: 10px;
+  }
+  textarea{
+      width: 50%;
+      margin: 10px 0;
+      font-size: 14px;
+      padding-left: 10px;
+  }
+  .mail{
+      font-size: 20px;
+    
+      margin-top: 50px;
+  }
+  @media screen and (max-width:824px){
+      .leftt{
+          display: none;
+      }
+      .righthead{
+          padding-top: 50px;
+          font-size: 30px;
+      }
+      .rightlow{
+          width: 80%;
+          margin: auto;
+      }
+      .c{
+          margin-top: 50px;
+          height: 80vh;
+      }
+  }

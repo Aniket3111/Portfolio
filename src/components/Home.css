@@ -1,7 +1,7 @@
 
 .i{
     display: flex;
-    height: 100vh;
+    height: 100%;
     margin-top: 40px;
 }
 .left{
@@ -89,11 +89,11 @@ a{
 .resume a{
     text-decoration: none;
 }
-@media screen and (max-width:720px){
+@media screen and (max-width:1024px){
   .i{
       flex-direction: column;
       margin-top: 0px;
-      height: 90vh;
+      height: 90%;
   }
   .i-bg{
       margin-top: 40px;

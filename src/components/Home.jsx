@@ -3,9 +3,11 @@ import "./Home.css"
 import resume from "../files/AniketRajani_Resume.pdf"
 import emoji from "../images/ar.png"
 import FloatingActionButtons from './fab'
+import Navbar from './Navbar'
 function Home() {
   return (
     <div className='main' id="home">
+      <Navbar/>
       <div className="i">
      <div className="left">
  <div className="left-wrapper">
