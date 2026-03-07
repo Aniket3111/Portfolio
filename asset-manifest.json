@@ -1,26 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a5c429be.css",
-    "main.js": "/Portfolio/static/js/main.2ba510c0.js",
+    "main.css": "/Portfolio/static/css/main.9c4f2915.css",
+    "main.js": "/Portfolio/static/js/main.2a34921c.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/ar.png": "/Portfolio/static/media/ar.683a31fe7b84fca1d990.png",
-    "static/media/5124556.jpg": "/Portfolio/static/media/5124556.13b798d6ec4d62e3e4d2.jpg",
+    "static/media/aniket_portofolio_avatar_light.png": "/Portfolio/static/media/aniket_portofolio_avatar_light.40bd64ddb5330d941f8d.png",
+    "static/media/aniket-rajani-about-light.png": "/Portfolio/static/media/aniket-rajani-about-light.9b0143906168ac64eeb6.png",
+    "static/media/aniket_portfolio_avatar_small.png": "/Portfolio/static/media/aniket_portfolio_avatar_small.9478ee5497cc8a38d845.png",
+    "static/media/aniket-rajani-about-dark.jpg": "/Portfolio/static/media/aniket-rajani-about-dark.a999252e3be9760d2ba6.jpg",
     "static/media/Aniket_Rajani_Resume.pdf": "/Portfolio/static/media/Aniket_Rajani_Resume.2a6f7b875ea23a5e8848.pdf",
-    "static/media/abtm.jpeg": "/Portfolio/static/media/abtm.21493947e0f34cb2828f.jpeg",
-    "static/media/python.png": "/Portfolio/static/media/python.6a5cbc319ab3ddf8ef92.png",
     "static/media/drivers4me.png": "/Portfolio/static/media/drivers4me.34b6573ddd192c71993a.png",
-    "static/media/physics.png": "/Portfolio/static/media/physics.86c8d9eba03e29814d2a.png",
-    "static/media/database.png": "/Portfolio/static/media/database.96af83e68e3b32fb2dd7.png",
-    "static/media/node-js.png": "/Portfolio/static/media/node-js.e328955d6bbbf3ebc72b.png",
-    "static/media/java-script.png": "/Portfolio/static/media/java-script.78206ba65e01c7d57080.png",
-    "static/media/css-3.png": "/Portfolio/static/media/css-3.463e319bad8e0edf1ef7.png",
     "index.html": "/Portfolio/index.html",
-    "main.a5c429be.css.map": "/Portfolio/static/css/main.a5c429be.css.map",
-    "main.2ba510c0.js.map": "/Portfolio/static/js/main.2ba510c0.js.map",
+    "main.9c4f2915.css.map": "/Portfolio/static/css/main.9c4f2915.css.map",
+    "main.2a34921c.js.map": "/Portfolio/static/js/main.2a34921c.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5c429be.css",
-    "static/js/main.2ba510c0.js"
+    "static/css/main.9c4f2915.css",
+    "static/js/main.2a34921c.js"
   ]
 }
