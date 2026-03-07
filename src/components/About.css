@@ -1,81 +1,97 @@
-.about-head{
-    text-align: center;
-    font-size: 37px;
-}
-#about{
-    margin-top: 30px;
-}
-.about-info{
-  margin: auto;
-display: flex;
-  height: 90vh;
-  width: 70%;
-}
-.about-image{
-    flex: 1;
-    margin-top: 15vh;
-}
-.about-image img{
-    width:100%;
-}
-.abt-img-box{
-    border: 1px solid black;
-    border-radius: 140px;
-    width: 50%;
-}
-.abt-img-box:hover{
-
-    transition:  box-shadow 300ms ease-in;
-    box-shadow: 1px 1px 10px 2px #7ed1cf;
-}
-@media screen and (max-width:1024px){
-    .about-info{
-        display: grid;
-        width: 90%;
-        margin-top: 20px;
-        height: 35rem;
-    }
-    .about-head{
-        font-size: 30px;
-        
-    }
-    .about-image{
-        margin-top: 0;
-    }
-    .abt-img-box{
-        margin: auto;
-        width: 37%;
-    }
-    .about-desc{
-       margin: auto;
-       width: 80% !important;
-        flex: 0;
-        margin-top: 10px !important;
-        padding: 10px !important;
-    }
-    .about-p{
-        font-size: 15px !important;
-        
-    }
+.about {
+  background: var(--bg-secondary);
 }
 
+.about-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
 
-.about-p{
-    font-size: 18px;
-    
+.about-header {
+  text-align: center;
+  margin-bottom: 56px;
 }
-.about-desc img{
-    width: 100px;
+
+.about-header .section-subtitle {
+  margin: 0 auto;
 }
-.about-desc{
-    width: 100%;
-    flex: 1;
-    border: 1px dashed black;
-    padding: 20px;
-    margin: auto;
+
+/* Full-width banner image */
+.about-banner {
+  margin-bottom: 40px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
-.about-desc:hover{
-    transition:  box-shadow 300ms ease-in;
-    box-shadow: 1px 1px 10px 2px #7ed1cf;
-    
+
+.about-banner img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.about-banner:hover img {
+  transform: scale(1.02);
+}
+
+/* Highlight cards — horizontal row */
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 20px;
+  border-radius: var(--radius-md);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.about-card-emoji {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--logo-img-bg);
+}
+
+.about-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-highlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-banner img {
+    height: 220px;
+  }
 }

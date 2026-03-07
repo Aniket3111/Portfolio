@@ -1,60 +1,157 @@
-.item {
-    box-shadow: 1px 1px 1px #7ed1cf;
-    border-radius: 12px;
-    width: 30%;
-    height: 35%;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #7ed1cf;
-    transition: box-shadow 300ms;
-  }
-  .item img{
-      width: 60%;
-      margin: 10px;
-  }
-  .ehead{
-      text-align: center;
-      font-size: 37px;
-  }
-  .exp{
-      margin-top: 30px;
-    
-  }
-  .ch{
-      font-size: 20px;
-  }
-  .chd{
-      font-size: 15px;
-  }
-  .cardc{
-      display: flex;
-       justify-content: space-around;
-      margin: 30px;
-  }
-  .wi{
-      flex: 1;
-  }
-  .desci{
-      flex: 2;
-      font-size: 14px;
-  }
-  .cr{
-      display: flex;
-  }
-  @media screen and (max-width:824px) {
-.cardc{
-    flex-direction: column;
-    margin: 10px;
+.experience {
+  background: var(--bg-secondary);
 }
-.item{
-    width: 80%;
+
+.experience-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
-.ehead{
-    font-size: 30px;
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 56px;
 }
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.exp-card {
+  display: grid;
+  grid-template-columns: 160px 40px 1fr;
+  gap: 0;
+  padding: 32px 0;
+}
+
+.exp-card-left {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 4px;
+}
+
+.exp-period {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.exp-card-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.exp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.exp-line {
+  width: 1px;
+  flex: 1;
+  background: var(--border);
+  margin-top: 8px;
+}
+
+.exp-card-right {
+  padding-left: 20px;
+  position: relative;
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 28px 28px 28px 28px;
+  backdrop-filter: blur(10px);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.exp-card-right:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.exp-backdrop-logo {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  max-height: 80%;
+  height: auto;
+  opacity: 0.09;
+  pointer-events: none;
+  user-select: none;
+  object-fit: contain;
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+.exp-card-right:hover .exp-backdrop-logo {
+  opacity: 0.16;
+}
+
+[data-theme="dark"] .exp-backdrop-logo {
+  opacity: 0.12;
+  filter: invert(1);
+}
+
+[data-theme="dark"] .exp-card-right:hover .exp-backdrop-logo {
+  opacity: 0.2;
+}
+
+.exp-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.exp-company {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.exp-role {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.exp-points {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-points li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 768px) {
+  .exp-card {
+    grid-template-columns: 24px 1fr;
   }
-  @media screen and (max-width:380px) {
-      .exp{
-          margin-top: 130px;
-      }
-    }
+
+  .exp-card-left {
+    display: none;
+  }
+
+  .exp-card-divider {
+    grid-row: 1;
+  }
+}
