@@ -97,6 +97,7 @@ function Home() {
   const floatingBoundsRef = useRef(null);
   const [pointer, setPointer] = useState(null);
   const [bounds, setBounds] = useState(null);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
 
   useEffect(() => {
     const updateTheme = () => {
@@ -126,9 +127,15 @@ function Home() {
     return () => window.removeEventListener("resize", updateBounds);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const profileImg = dark ? profileImgDark : profileImgLight;
   const updatePointer = (clientX, clientY) => {
-    if (!bounds) return;
+    if (!bounds || isMobile) return;
     setPointer({ x: clientX - bounds.left, y: clientY - bounds.top });
   };
 
@@ -144,14 +151,6 @@ function Home() {
         updatePointer(e.clientX, e.clientY);
       }}
       onMouseLeave={() => setPointer(null)}
-      onTouchStart={(e) => {
-        const touch = e.touches[0];
-        if (touch) updatePointer(touch.clientX, touch.clientY);
-      }}
-      onTouchMove={(e) => {
-        const touch = e.touches[0];
-        if (touch) updatePointer(touch.clientX, touch.clientY);
-      }}
       onTouchEnd={() => setPointer(null)}
       onTouchCancel={() => setPointer(null)}
     >

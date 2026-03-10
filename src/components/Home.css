@@ -267,8 +267,7 @@
   }
 
   .hero-pointer-glow {
-    width: 240px;
-    height: 240px;
+    display: none;
   }
 
   [data-theme="dark"] .floating-icon {
