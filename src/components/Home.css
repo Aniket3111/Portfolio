@@ -165,37 +165,46 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  pointer-events: none;
+  pointer-events: auto;
   overflow: hidden;
+}
+
+.hero-pointer-glow {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(92, 198, 255, 0.3) 0%, rgba(69, 255, 216, 0.16) 34%, rgba(69, 184, 255, 0.08) 52%, transparent 74%);
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.18s ease-out;
+  pointer-events: none;
+}
+
+.hero-pointer-glow.active {
+  opacity: 1;
 }
 
 .floating-icon {
   position: absolute;
-  opacity: 0.07;
-  filter: grayscale(0.3);
-  animation: floatDrift 6s ease-in-out infinite;
-  transition: opacity 0.3s ease;
-}
-
-.floating-icon:nth-child(even) {
-  animation-duration: 8s;
-  animation-direction: alternate-reverse;
-}
-
-.floating-icon:nth-child(3n) {
-  animation-duration: 7s;
-  animation-delay: -2s;
+  opacity: 0.36;
+  filter: grayscale(0);
+  pointer-events: auto;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  will-change: transform;
 }
 
 [data-theme="dark"] .floating-icon {
-  opacity: 0.10;
-  filter: grayscale(0.2) brightness(1.5);
+  opacity: 0.46;
+  filter: grayscale(0) brightness(1.08);
 }
 
-@keyframes floatDrift {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  33% { transform: translateY(-12px) rotate(3deg); }
-  66% { transform: translateY(8px) rotate(-2deg); }
+[data-theme="dark"] .hero-pointer-glow {
+  background: radial-gradient(circle, rgba(123, 216, 255, 0.34) 0%, rgba(60, 255, 200, 0.18) 34%, rgba(86, 139, 255, 0.1) 52%, transparent 74%);
 }
 
 /* Scroll indicator */
@@ -254,10 +263,15 @@
   }
 
   .floating-icon {
-    opacity: 0.05;
+    opacity: 0.24;
+  }
+
+  .hero-pointer-glow {
+    width: 240px;
+    height: 240px;
   }
 
   [data-theme="dark"] .floating-icon {
-    opacity: 0.07;
+    opacity: 0.34;
   }
 }

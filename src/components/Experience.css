@@ -100,7 +100,7 @@
 }
 
 [data-theme="dark"] .exp-backdrop-logo {
-  opacity: 0.12;
+  opacity: 0.5;
   filter: invert(1);
 }
 
