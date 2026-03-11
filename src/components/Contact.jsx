@@ -80,7 +80,7 @@ function Contact() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <p>Designed & built by Aniket Rajani</p>
+         <p>Designed & built by Aniket Rajani. Crafted with the help of AI tools.</p>
         </motion.div>
       </div>
     </section>
