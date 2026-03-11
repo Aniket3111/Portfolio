@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.38b0a25d.css",
-    "main.js": "/Portfolio/static/js/main.9920fd88.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/aniket_portofolio_avatar_light.png": "/Portfolio/static/media/aniket_portofolio_avatar_light.40bd64ddb5330d941f8d.png",
-    "static/media/aniket-rajani-about-light.png": "/Portfolio/static/media/aniket-rajani-about-light.9b0143906168ac64eeb6.png",
-    "static/media/aniket_portfolio_avatar_small.png": "/Portfolio/static/media/aniket_portfolio_avatar_small.9478ee5497cc8a38d845.png",
-    "static/media/aniket-rajani-about-dark.jpg": "/Portfolio/static/media/aniket-rajani-about-dark.a999252e3be9760d2ba6.jpg",
-    "static/media/Aniket_Rajani_Resume.pdf": "/Portfolio/static/media/Aniket_Rajani_Resume.2a6f7b875ea23a5e8848.pdf",
-    "static/media/drivers4me.png": "/Portfolio/static/media/drivers4me.34b6573ddd192c71993a.png",
-    "index.html": "/Portfolio/index.html",
-    "main.38b0a25d.css.map": "/Portfolio/static/css/main.38b0a25d.css.map",
-    "main.9920fd88.js.map": "/Portfolio/static/js/main.9920fd88.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/static/css/main.38b0a25d.css",
+    "main.js": "/static/js/main.888a1d34.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/aniket_portofolio_avatar_light.png": "/static/media/aniket_portofolio_avatar_light.40bd64ddb5330d941f8d.png",
+    "static/media/aniket-rajani-about-light.png": "/static/media/aniket-rajani-about-light.9b0143906168ac64eeb6.png",
+    "static/media/aniket_portfolio_avatar_small.png": "/static/media/aniket_portfolio_avatar_small.9478ee5497cc8a38d845.png",
+    "static/media/aniket-rajani-about-dark.jpg": "/static/media/aniket-rajani-about-dark.a999252e3be9760d2ba6.jpg",
+    "static/media/Aniket_Rajani_Resume.pdf": "/static/media/Aniket_Rajani_Resume.2a6f7b875ea23a5e8848.pdf",
+    "static/media/drivers4me.png": "/static/media/drivers4me.34b6573ddd192c71993a.png",
+    "index.html": "/index.html",
+    "main.38b0a25d.css.map": "/static/css/main.38b0a25d.css.map",
+    "main.888a1d34.js.map": "/static/js/main.888a1d34.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38b0a25d.css",
-    "static/js/main.9920fd88.js"
+    "static/js/main.888a1d34.js"
   ]
 }
