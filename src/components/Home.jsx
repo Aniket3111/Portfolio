@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import "./Home.css";
-import resume from "../files/Aniket_Rajani_Resume.pdf";
+import resume from "../files/Aniket-Rajani-Resume.pdf";
 import profileImgLight from "../images/aniket_portofolio_avatar_light.png";
 import profileImgDark from "../images/aniket_portfolio_avatar_small.png";
 import Navbar from "./Navbar";
@@ -194,7 +194,7 @@ function Home() {
       <div className="hero-container">
         <div className="hero-content">
           <motion.span className="hero-badge" custom={0} variants={fadeUp} initial="hidden" animate="visible">
-            Software Developer
+            Master&apos;s Student · Gothenburg, Sweden
           </motion.span>
 
           <motion.h1 className="hero-title" custom={1} variants={fadeUp} initial="hidden" animate="visible">
@@ -204,8 +204,8 @@ function Home() {
           </motion.h1>
 
           <motion.p className="hero-subtitle" custom={2} variants={fadeUp} initial="hidden" animate="visible">
-            I craft scalable web products with clean interfaces,
-            thoughtful architecture, and solid engineering.
+            MSc student in Software Engineering and Technology at Chalmers University of
+            Technology, crafting scalable products with thoughtful architecture and clean interfaces.
           </motion.p>
 
           <motion.div className="hero-actions" custom={4} variants={fadeUp} initial="hidden" animate="visible">

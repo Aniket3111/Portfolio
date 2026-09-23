@@ -5,11 +5,27 @@ import drivers4meLogo from "../images/drivers4me.png"
 import abzoobaLogo from "../images/abzooba.png"
 import acadqueLogo from "../images/q.jpg"
 
+const chalmersPhoto =
+  "https://upload.wikimedia.org/wikipedia/commons/d/d3/Chalmers_University_of_Technology.jpg"
+
 const experiences = [
+  {
+    company: "Chalmers University of Technology",
+    role: "MSc in Software Engineering and Technology",
+    period: "2026 — Present",
+    location: "Gothenburg, Sweden",
+    logo: chalmersPhoto,
+    imageType: "photo",
+    points: [
+      "Currently pursuing a Master of Science in Software Engineering and Technology.",
+      "Continuing my academic journey in Gothenburg while building on my software engineering experience."
+    ]
+  },
   {
     company: "Drivers4Me",
     role: "SDE-1",
-    period: "Apr 2024 — Present",
+    period: "Apr 2024 — Jul 2026",
+    location: "India",
     logo: drivers4meLogo,
     points: [
       "Built scalable admin and B2B affiliate portals using React, TypeScript, and Python Flask.",
@@ -63,8 +79,8 @@ function Experience() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="section-label">Experience</span>
-          <h2 className="section-title">Where I've worked.</h2>
+          <span className="section-label">Experience &amp; Education</span>
+          <h2 className="section-title">Where I've worked &amp; studied.</h2>
         </motion.div>
 
         <div className="experience-timeline">
@@ -86,15 +102,30 @@ function Experience() {
                 {i < experiences.length - 1 && <div className="exp-line" />}
               </div>
               <div className="exp-card-right">
-                <img src={exp.logo} alt="" className="exp-backdrop-logo" />
+                <img
+                  src={exp.logo}
+                  alt=""
+                  className={`exp-backdrop-logo ${exp.imageType === "photo" ? "exp-backdrop-photo" : ""}`}
+                />
                 <div className="exp-card-content">
                   <h3 className="exp-company">{exp.company}</h3>
                   <span className="exp-role">{exp.role}</span>
+                  {exp.location && <span className="exp-location">{exp.location}</span>}
                   <ul className="exp-points">
                     {exp.points.map((point, j) => (
                       <li key={j}>{point}</li>
                     ))}
                   </ul>
+                  {exp.imageCredit && (
+                    <a
+                      className="exp-image-credit"
+                      href={exp.imageCredit.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {exp.imageCredit.label}
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

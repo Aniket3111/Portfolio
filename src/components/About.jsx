@@ -59,8 +59,9 @@ function About() {
           <span className="section-label">About</span>
           <h2 className="section-title">A bit about me.</h2>
           <p className="section-subtitle">
-            Computer Engineering graduate from Pune University,
-            currently building products as a Software Developer at Drivers4Me.
+            Computer Engineering graduate from Pune University and former Software Developer
+            at Drivers4Me, now pursuing a Master of Science in Software Engineering and Technology
+            at Chalmers University of Technology in Gothenburg, Sweden.
           </p>
         </motion.div>
 
